@@ -1,0 +1,155 @@
+/* Brush graph properties */
+
+.contextline,
+.pathclass {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: square;
+  stroke-linejoin: round; /*miter,round,bevel*/
+  stroke: red; /*This color gets overwritten in code*/
+}
+
+.colorrain {
+  stroke: midnightblue;
+}
+
+.colormono {
+  stroke: black;
+}
+
+.brush .extent {
+  stroke: red;
+  fill: black;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+  stroke-width: 2;
+}
+
+.pmtbrush .extent,
+.zoombrush .extent {
+  stroke: steelblue;
+  fill: black;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+  /*stroke-width: 2;*/
+}
+
+.grid .tick {
+  stroke: lightgrey;
+  /*stroke-dasharray: 5,5;*/
+  opacity: 0.7;
+}
+.grid path {
+  stroke-width: 0;
+}
+
+
+/* Axis properties, shared by brush graph and colorbar */
+rect.legendary,
+.axis path,
+.axis line,
+.colorbar path,
+.colorbar line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+text.legendary,
+.context text,
+.axis text,
+.colorbar text {
+  font-family: serif;
+  font-size: 12px;
+}
+
+
+/* RQ properties */
+.pulselabelclass {
+  stroke: DimGray;
+  fill: white;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+}
+.pulsepane rect:hover {
+  /*opacity: .5;*/
+}
+.pulsepane text {
+  pointer-events: none;
+}
+
+body {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Control panel and main page properties */
+h1.title {
+  font-variant: small-caps;
+  font-style: italic;
+  font-size: 42px; /*32*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  display: inline-block;
+}
+h1.subtitle {
+  font-style: italic;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: inline-block;
+}
+.reconlogo {
+  shape-rendering: crispEdges;
+}
+
+#graphicsframe th, #graphicsframe td {
+  font-size: 1%
+}
+
+div#controlpanel,
+div#helppanel,
+div#requesthelppanel {
+  display: none;
+}
+table.control {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+table.control td{
+  /*border: 1px solid black;*/
+}
+.ctitle {
+  background-color: Peru;
+  border: 1px solid black;
+}
+.highlightable:hover {
+  background: yellow;
+}
+.indentedblock {
+  margin-left: 2em;
+}
+.requestformtitle {
+  text-decoration: underline;
+  font-size: 125%;
+}
+.requestformbutton {
+  font-size: 125%;
+  font-weight: bold;
+}
+.requestformexample {
+  font-family: sans-serif;
+  color: dimgray;
+  font-size: 80%;
+}
+.requestformsmalltext {
+  font-size: 80%;
+}
+
+
+/* Used to fill in graphics' backgrounds */
+.backgroundcolor {
+  fill: none;
+  /*fill: pink; stroke: magenta;*/
+}
